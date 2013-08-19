@@ -16,6 +16,18 @@
 		//Datenbank verbindung aufbauen
 		include("connect.php");
 		
+		//überprüfen ob user schon vorhanden ist
+		$abfrage = "SELECT username FROM users";
+		$ergebnis = mysql_query($abfrage);
+		while($row = mysql_fetch_object($ergebnis))
+		   {
+			   $username_db = $row->username; 
+		   if($username == $username_db){
+				echo("User bereits vorhanden");
+				die();   
+		   }
+		}
+		
 		//user eintragen
 		$insert = mysql_query("insert into users (username, password, vorname, nachname, strasse, plz, ort, rolle, bids) values ('$username', '$pw', '$firstname', '$lastname', '$street', '$zip', '$city', '$rolle', '$bids')");
 ?>

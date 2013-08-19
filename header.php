@@ -18,6 +18,7 @@
 	?>
     <div class="head-nav">
    		<a href="login.php">Login</a>
+        <a href="register.php">Registrieren</a>
     </div>
     <?php
 		//wenn eingeloggt, auf
