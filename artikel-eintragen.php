@@ -1,5 +1,6 @@
 <?php
 	include("header.php");
+	if($rolle == "admin"){
 ?>
 <form action="eintragen.php" method="post">
 <div class="row-fluid">
@@ -21,6 +22,14 @@
 </div>
 <div class="row-fluid">
 	<div class="span2">
+    	Kategorie
+    </div>
+    <div class="span10">
+    	<input type="text" name="kategorie" />
+    </div>
+</div>
+<div class="row-fluid">
+	<div class="span2">
     	Preis
     </div>
     <div class="span10">
@@ -29,5 +38,15 @@
 </div>
 <input type="submit" class="btn btn-success" value="eintragen" />
 </form>
+<?php
+	} else {
+?>
+	<div class="container">
+    	<h1>Sie sind dazu nicht berechtigt.</h1>
+    </div>
+<?php
+	die();
+	}
+?>
 </body>
 </html>

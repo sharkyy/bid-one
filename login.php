@@ -2,7 +2,7 @@
 	include("header.php");
 	if(!isset($_SESSION['username'])){
 ?>
-	<div class="container">
+	<div class="container" id="login-content">
         <div class="login">
             <form action="login2.php" method="post">
                 Username:

@@ -21,7 +21,7 @@ if(mysql_num_rows($ergebnis) > 0) {
     }
 else
         {
-        echo "<div class='container' style='margin-top:50px;'>Benutzername und/oder Passwort waren falsch. <a href=\"login.html\">Login</a></div>";
+        echo "<div class='container' style='margin-top:50px;'>Benutzername und/oder Passwort waren falsch. <a href=\"login.php\">Login</a></div>";
         }
 mysql_close($verbindung);  
 ?>

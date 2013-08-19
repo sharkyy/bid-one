@@ -12,14 +12,15 @@
 		<link rel="stylesheet" type="text/css" href="styles.css">
 	</head>
 	<body>
-    <div class="head-nav">
     <?php
 		//Wenn nicht eingeloggt:
 		if(!isset($_SESSION['username'])){
 	?>
     <div class="head-nav">
-   		<a href="login.php">Login</a>
-        <a href="register.php">Registrieren</a>
+    <ul>
+   		<li><a href="login.php">Login</a></li>
+        <li><a href="register.php">Registrieren</a></li>
+    </ul>
     </div>
     <?php
 		//wenn eingeloggt, auf
@@ -36,19 +37,26 @@
 			{
 				$rolle = $zeile['rolle'];	
 			}
-			//Adminpanel in der navi anzeigen, auf
+	?>
+    <div class="head-nav">
+    	<ul>
+    		<li><a href="index.php">Home</a></li>
+			<li><a href="how-about.php">Wie es funktioniert</a></li>
+			<li><a href="#">Mein Account</a></li>
+    		<li><a href="#">Bids kaufen</a></li>
+    <?php
+    //Adminpanel in der navi anzeigen, auf
 			if($rolle == admin){
 	?>
-				<a href='admin.php'>Adminpanel</a>
+			<li><a href='admin.php'>Adminpanel</a></li>
     <?php	
 			//Adminpanel in der navi anzeigen, zu
 			}
 	?>
-    <a href="index.php">Home</a>
-	<a href="#">Mein Account</a>
-    <a href="#">Bids kaufen</a>
-    <a href="logout.php">Logout</a>
+    		<li><a href="logout.php">Logout</a></li>
+    	</ul>
 	</div>
+    <br>
     <?php
 		//wenn eingeloggt, zu
 		}
