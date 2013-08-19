@@ -7,6 +7,7 @@
     	<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
 		<link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
 		<meta charset="utf-8">
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />  
 		<title>Bid-One</title>
 		<link rel="stylesheet" type="text/css" href="styles.css">
 	</head>
@@ -43,6 +44,7 @@
 			//Adminpanel in der navi anzeigen, zu
 			}
 	?>
+    <a href="index.php">Home</a>
 	<a href="#">Mein Account</a>
     <a href="#">Bids kaufen</a>
     <a href="logout.php">Logout</a>

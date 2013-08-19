@@ -4,7 +4,7 @@
 ?>
 	<div class="container" style="margin-top:50px; margin-left: 100px; width: 420px; float: left;">
     <h1>Neuen User eintragen</h1>	
-        <form action="register2.php" method="post">
+        <form action="register3.php" method="post">
             Username:
             <br>
             <input type="text" name="username" />
@@ -33,6 +33,10 @@
             <br>
             <input type="text" name="city" />
             <br>
+            Bids:
+            <br>
+            <input type="number" name="bids" />
+            <br>
             Rolle:
             <br>
             <select name="rolle">
@@ -45,7 +49,7 @@
         </div>
         <div class="user_verwalten" style="margin-top:50px; margin-right: 100px; width: 420px; float: right;">
     		<h1>User verwalten</h1>
-            <a href="users.php"><button class="btn btn-info">User verwalten</button></a>
+            <a href="user-anzeigen.php"><button class="btn btn-info">User verwalten</button></a>
             </div>
    	<div class="container" style="margin-top:50px; margin-right: 100px; width: 420px; float: right;">
     	<h1>User l&ouml;schen</h1>
@@ -66,6 +70,9 @@
         <input type="submit" value="l&ouml;schen" class="btn btn-danger" />
         </form>
     </div>
+    <div class="container" style="margin-top:50px; margin-right: 100px; width: 420px; float: right;">
+    <h1>Artikelliste</h1>
+    <a href="artikel.php"><buton class="btn btn-info">Artikel anzeigen / bearbeiten</button></a>
 <?php
 	} else{
 ?>
