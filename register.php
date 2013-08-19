@@ -2,7 +2,7 @@
 	include("header.php");
 ?>
 	<div class="register-form">
-		<form action="reg.php" method="post">
+		<form action="register2.php" method="post">
         	Username:
             <input type="text" name="username" />
             <br>
@@ -25,7 +25,7 @@
             <input type="text" maxlength="5" name="zip" />
             <br>
             Ort:
-            <input type="text" name="vorname" />
+            <input type="text" name="city" />
             <br>
             <input type="submit" value="Registrieren" />
         </form>
