@@ -2,6 +2,9 @@
 	include_once("header.php");
 	if($rolle == "admin"){
 ?>
+<div class="adminpanel">
+	<div class="row-fluid">
+    <div class="span5">
 	<div class="container" style="margin-top:50px; margin-left: 100px; width: 420px; float: left;">
     <h1>Neuen User eintragen</h1>	
         <form action="register3.php" method="post">
@@ -47,11 +50,13 @@
             <input type="submit" value="User eintragen" class="btn btn-success"/>
         </form>
         </div>
-        <div class="user_verwalten" style="margin-top:50px; margin-right: 100px; width: 420px; float: right;">
+        </div>
+        <div class="span7">
+        <div class="user_verwalten" id="admin-panel-right">
     		<h1>User verwalten</h1>
             <a href="user-anzeigen.php"><button class="btn btn-info">User verwalten</button></a>
             </div>
-   	<div class="container" style="margin-top:50px; margin-right: 100px; width: 420px; float: right;">
+   	<div class="container" id="admin-panel-right">
     	<h1>User l&ouml;schen</h1>
         <form action="loeschen.php" method="post">
         Username:
@@ -70,9 +75,11 @@
         <input type="submit" value="l&ouml;schen" class="btn btn-danger" />
         </form>
     </div>
-    <div class="container" style="margin-top:50px; margin-right: 100px; width: 420px; float: right;">
+    <div class="container" id="admin-panel-right">
     <h1>Artikelliste</h1>
     <a href="artikel.php"><buton class="btn btn-info">Artikel anzeigen / bearbeiten</button></a>
+    </div>
+</div>
 <?php
 	} else{
 ?>

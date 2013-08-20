@@ -40,21 +40,23 @@
 	?>
     <div class="head-nav">
     	<ul>
-    		<li><a href="index.php">Home</a></li>
+       		<li><a href="index.php">Home</a></li>
+    		<li><a href="#">Aktuelle Auktionen</a></li>
+            <li><a href="#">Zukünftige Auktionen</a></li>
 			<li><a href="how-about.php">Wie es funktioniert</a></li>
-			<li><a href="#">Mein Account</a></li>
     		<li><a href="#">Bids kaufen</a></li>
         </ul>
         <ul style="float:right">
     <?php
     //Adminpanel in der navi anzeigen, auf
-			if($rolle == admin){
+			if($rolle == "admin"){
 	?>
 			<li><a href='admin.php'>Adminpanel</a></li>
     <?php	
 			//Adminpanel in der navi anzeigen, zu
 			}
 	?>
+    		<li><a href="#">Mein Account</a></li>
     		<li><a href="logout.php">Logout</a></li>
     	</ul>
 	</div>

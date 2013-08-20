@@ -2,7 +2,8 @@
 	include("header.php");
 	include("connect.php");
 ?>
-<table class="table-bordered" border="1">
+<div class="container" id="user-table">
+<table class="table-bordered font-white" border="1">
 <colgroup>
     <col style="width:150px" span="8">
   </colgroup>
@@ -33,5 +34,6 @@
 				}
 ?>
 </table>
+</div>
 </body>
 </html>
