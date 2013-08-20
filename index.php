@@ -5,27 +5,18 @@
 	<div class="container">
 		<div class="artikel_heading">
         	<?php
-				$sql = "SELECT * FROM artikel";
+				$sql = "SELECT * FROM artikel WHERE startzeit > NOW()";
 				$db_erg = mysql_query( $sql );
 				while ($zeile = mysql_fetch_array( $db_erg, MYSQL_ASSOC))
 				{
 			?>
             	<div class="row-fluid" id="article">
                 	<div class="span3">
-                    	<h1>Image</h1>
-                    </div>
-                    <div class="span9">
+                    	<h4>Image</h4>
                     	<?php
-   							  echo "<h1>". $zeile['artikelname'] . "</h1>";
-							  echo "<div class='row-fluid'>";
-							  echo "<div class='span9'>";
-							  echo "<h2>Angebotsende: ".$zeile['endzeit']."</h2>";
-							  echo "</div>";
-							  echo "<div class='span3'>";
-							  echo "<h2>Preis: ".$zeile['preis']."€</h2>";
-							  echo"</div>";
-							  echo"</div>";
-							  echo "<br><br>".$zeile['artikelbeschreibung'];
+   							  echo "<h4>". $zeile['artikelname'] . "</h4>";
+							  echo "<h5>Angebotsende: ".$zeile['endzeit']."</h5>";
+							  echo "<h5>Preis: ".$zeile['preis']."€</h5>";
 							  }
 						?>
                     </div>

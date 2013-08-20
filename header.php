@@ -44,6 +44,8 @@
 			<li><a href="how-about.php">Wie es funktioniert</a></li>
 			<li><a href="#">Mein Account</a></li>
     		<li><a href="#">Bids kaufen</a></li>
+        </ul>
+        <ul style="float:right">
     <?php
     //Adminpanel in der navi anzeigen, auf
 			if($rolle == admin){
