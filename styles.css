@@ -157,20 +157,21 @@ src: url(fonts/Capture_it.ttf);
 }
 
 .submenu ul{
-	background-color:#ffffff;
+	background-color:#0F0;
   text-shadow:#000000 0px 0px 5px;	
 }
 
 .submenu a{
-  font-size:12px;
+  font-size:14px;
   width:110px;
   position:relative;
   clear:both; /* special IE6 */
 }
 
 #menu a:hover, .topmenu.on a {
+	opacity:0.5;
   color:#000000;
-  background-color:#ffffff !important;
+  background-color:#0F0; !important;
 }
 
 .topmenu:hover ul {

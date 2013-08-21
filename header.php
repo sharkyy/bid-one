@@ -53,7 +53,7 @@
     		<?php //Header Menü ?>
           	<div id="menu">
             	<ul>
-            <?php
+            <!--<?php
 			//Adminpanel in der navi anzeigen, auf
 					if($rolle == "admin"){
 			?>
@@ -64,54 +64,43 @@
 				//Adminpanel in der navi anzeigen, zu
 				}
 				?>
-              <li class="topmenu">
-                <a href="logout.php">Auktionen</a>
-              	<ul class="submenu">
-                  <li class="submenu"><a href="">Aktuelle</a></li>
-                  <li class="submenu"><a href="">Zukünftige</a></li>
-                  <li class="submenu"><a href="">Beendete</a></li>
-                </ul>
-              </li>
-              <li class="topmenu">
-                <a href="">Mein Account</a>
-              </li>
-              <li class="topmenu">
-                <a href="">Bids kaufen</a>
-              </li>
-              <li class="topmenu">
-                <a href="logout.php">Logout</a>
-              </li>
+             -->
+              <div class="row-fluid">
+              	<div class="span3">
+                  <li class="topmenu">
+                    <a href="logout.php">Auktionen</a>
+                    <ul class="submenu">
+                      <li class="submenu"><a href="">Aktuelle</a></li>
+                      <li class="submenu"><a href="">Zukünftige</a></li>
+                      <li class="submenu"><a href="">Beendete</a></li>
+                    </ul>
+                  </li>
+                </div>
+                <div class="span3">
+                  <li class="topmenu">
+                    <a href="">Mein Account</a>
+                  </li>
+                </div>
+                <div class="span3">
+                  <li class="topmenu">
+                    <a href="">Bids kaufen</a>
+                  </li>
+                </div>
+                <div class="span3">
+                  <li class="topmenu">
+                    <a href="logout.php">Logout</a>
+                  </li>
+                </div>
             </ul>
           </div>
           </div>
           <div class="span3">
           <div class="logo_downline2">
           </div>
-          </div>
-          </div>
-          </div><!--
-    <div class="container head-nav">
-    	<div id="menu-left">
-        	<div id="menu">
-            <ul>
-              <li class="topmenu">
-                <a href="index.php">Startseite</a>
-              </li>
-              <li class="topmenu">
-                <a href="">Auktionen</a>
-                
-              </li>
-              <li class="topmenu">
-                <a href="how-about.php">Wie es funktioniert</a>
-              </li>
-              <li class="topmenu">
-                <a href="">Bids kaufen</a>
-              </li>
-            </ul>
-          </div>
-          </div>
-          -->
+      </div>
     </div>
+  </div>
+</div>
     <br>
     <?php
 		//wenn eingeloggt, zu
