@@ -38,28 +38,80 @@
 				$rolle = $zeile['rolle'];	
 			}
 	?>
-    <div class="head-nav">
-    	<ul>
-       		<li><a href="index.php">Home</a></li>
-    		<li><a href="#">Aktuelle Auktionen</a></li>
-            <li><a href="#">Zukünftige Auktionen</a></li>
-			<li><a href="how-about.php">Wie es funktioniert</a></li>
-    		<li><a href="#">Bids kaufen</a></li>
-        </ul>
-        <ul style="float:right">
-    <?php
-    //Adminpanel in der navi anzeigen, auf
-			if($rolle == "admin"){
-	?>
-			<li><a href='admin.php'>Adminpanel</a></li>
-    <?php	
-			//Adminpanel in der navi anzeigen, zu
-			}
-	?>
-    		<li><a href="#">Mein Account</a></li>
-    		<li><a href="logout.php">Logout</a></li>
-    	</ul>
-	</div>
+    <div class="container">
+    	<div class="row-fluid">
+        	<div class="span12">
+    			<a href="index.php"><img src="img/logo.png" class="logo" alt="logo" /></a>
+    		</div>
+        </div>
+    <div class="row-fluid">
+    	<div class="span3">
+    		<div class="logo_downline">
+    		</div>
+        </div>
+        <div class="span6">
+    		<?php //Header Menü ?>
+          	<div id="menu">
+            	<ul>
+            <?php
+			//Adminpanel in der navi anzeigen, auf
+					if($rolle == "admin"){
+			?>
+              <li class="topmenu">
+                <a href="admin.php">Adminpanel</a>
+              </li>
+              <?php	
+				//Adminpanel in der navi anzeigen, zu
+				}
+				?>
+              <li class="topmenu">
+                <a href="logout.php">Auktionen</a>
+              	<ul class="submenu">
+                  <li class="submenu"><a href="">Aktuelle</a></li>
+                  <li class="submenu"><a href="">Zukünftige</a></li>
+                  <li class="submenu"><a href="">Beendete</a></li>
+                </ul>
+              </li>
+              <li class="topmenu">
+                <a href="">Mein Account</a>
+              </li>
+              <li class="topmenu">
+                <a href="">Bids kaufen</a>
+              </li>
+              <li class="topmenu">
+                <a href="logout.php">Logout</a>
+              </li>
+            </ul>
+          </div>
+          </div>
+          <div class="span3">
+          <div class="logo_downline2">
+          </div>
+          </div>
+          </div>
+          </div><!--
+    <div class="container head-nav">
+    	<div id="menu-left">
+        	<div id="menu">
+            <ul>
+              <li class="topmenu">
+                <a href="index.php">Startseite</a>
+              </li>
+              <li class="topmenu">
+                <a href="">Auktionen</a>
+                
+              </li>
+              <li class="topmenu">
+                <a href="how-about.php">Wie es funktioniert</a>
+              </li>
+              <li class="topmenu">
+                <a href="">Bids kaufen</a>
+              </li>
+            </ul>
+          </div>
+          </div>
+          -->
+    </div>
     <br>
     <?php
 		//wenn eingeloggt, zu
